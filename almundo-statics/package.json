@@ -1,0 +1,28 @@
+{
+  "name": "almundo-statics",
+  "version": "1.0.0",
+  "description": "server statics server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnFT/almundo.git"
+  },
+  "keywords": [
+    "statics",
+    "almundo"
+  ],
+  "author": "john fonseca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnFT/almundo/issues"
+  },
+  "homepage": "https://github.com/JohnFT/almundo#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3"
+  }
+}

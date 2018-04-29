@@ -1,0 +1,36 @@
+{
+  "name": "almundo-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Almundo Hotels - API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "SET NODE_ENV=production && node server.js",
+    "start-dev": "SET DEBUG=almundo:* && nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnFT/almundo-api.git"
+  },
+  "keywords": [
+    "Hotels",
+    "Almundo"
+  ],
+  "author": "John Fonseca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnFT/almundo-api/issues"
+  },
+  "homepage": "https://github.com/JohnFT/almundo-api#readme",
+  "dependencies": {
+    "almundo-db": "file:../almundo-db",
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "express-asyncify": "^1.0.0",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.2.1",
+    "nodemon": "^1.17.3"
+  }
+}

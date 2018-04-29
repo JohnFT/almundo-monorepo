@@ -1,0 +1,37 @@
+{
+  "name": "almundo-db",
+  "version": "1.0.0",
+  "private": true,
+  "description": "plataforma para reserva de hoteles -- DB Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "SET DEBUG=almundo:* && node setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnFT/almundo.git"
+  },
+  "keywords": [
+    "Hoteleria",
+    "almundo"
+  ],
+  "author": "John Fonseca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnFT/almundo/issues"
+  },
+  "homepage": "https://github.com/JohnFT/almundo#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "defaults": "^1.0.3",
+    "inquirer": "^5.2.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.37.6"
+  },
+  "devDependencies": {
+    "sinon": "^4.5.0"
+  }
+}
