@@ -4,14 +4,20 @@ const amenities = require('../mocks/amenities');
 const db = require('../lib/db');
 
 module.exports = function setupHotel(HotelModel, amenitieModel) {
-    hotels = getHotelsAmenities(hotels)
+
+    hotels = getHotelsAmenities(hotels);
+
+    function setupHotel() {
+        return db(null);
+    }
+
 
     async function findAll() {
         try {
-            const sequelize = db(null);
+
             let res = await HotelModel.findAll();
             res = await Promise.all(res.map(async h => {
-                h.amenities = await sequelize.query(`SELECT a.* FROM  hotelamenities, amenities a WHERE a.id = "amenitieId" AND "hotelId" = ${h.id}`, {
+                h.amenities = await setupHotel().query(`SELECT a.* FROM  hotelamenities, amenities a WHERE a.id = "amenitieId" AND "hotelId" = ${h.id}`, {
                     model: amenitieModel
                 })
                 return h;
@@ -20,10 +26,8 @@ module.exports = function setupHotel(HotelModel, amenitieModel) {
         } catch (err) {
             return [];
         }
-
-
-
     }
+
 
     function getHotelsAmenities(hotels) {
         return hotels.map(h => {
@@ -43,13 +47,29 @@ module.exports = function setupHotel(HotelModel, amenitieModel) {
         return HotelModel ? HotelModel.findById(id) : hotels.find(h => h.id === id);
     }
 
-    function findByName(name) {
-        return HotelModel ? HotelModel.findByAll({
-            where: {
-                name
-            }
+    async function findByName(name) {
+        setupHotel();
+        const res = HotelModel ? await setupHotel().query(`SELECT * FROM  hotels WHERE name like '%${name}%'`, {
+            model: HotelModel
         }) : hotels.find(h => h.name === name);
+
+        return res;
     }
+
+    async function findByStars(stars) {
+        const res = HotelModel ? await setupHotel().query(`SELECT * FROM  hotels WHERE stars = ${stars}`, {
+            model: HotelModel
+        }) : hotels.find(h => h.stars === stars);
+        return res;
+    }
+
+    async function findByNameAndStars(name, stars) {
+        const res = HotelModel ? await setupHotel().query(`SELECT * FROM  hotels WHERE name like '%${name}%' AND stars = ${stars}`, {
+            model: HotelModel
+        }) : hotels.find(h => h.stars === stars && h.name === name);
+        return res;
+    }
+
 
     async function createOrUpdate(hotel) {
         if (HotelModel) {
@@ -61,7 +81,7 @@ module.exports = function setupHotel(HotelModel, amenitieModel) {
             const result = await HotelModel.create(hotel);
             return result;
         } else {
-            const oldHotel = hotels.find(h => h.id === hotel.id);
+            let oldHotel = hotels.find(h => h.id === hotel.id);
             if (oldHotel) {
                 oldHotel = hotel;
             } else {
@@ -71,10 +91,26 @@ module.exports = function setupHotel(HotelModel, amenitieModel) {
         }
     }
 
+    async function deleteHotel(hotel) {
+        if (HotelModel) {
+            const squlize = setupHotel();
+            const deleteamenties = await squlize.query(`DELETE  FROM  hotelamenities WHERE "hotelId" = ${hotel.id}`);
+            const res = await squlize.query(`DELETE  FROM  hotels WHERE "id" = ${hotel.id}`);
+            return res;
+        }
+
+        hotels = hotels.filter(h => h.id !== hotel.id);
+        return true;
+    }
+
     return {
+        setupHotel,
         findById,
         createOrUpdate,
         findAll,
-        findByName
+        findByName,
+        findByStars,
+        findByNameAndStars,
+        deleteHotel
     }
 }

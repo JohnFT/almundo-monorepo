@@ -7,16 +7,18 @@ const jwt = require('jsonwebtoken');
     @Param<secret> privat key
     @Param<callback> function response
 */
-function sign(playload, secret, callback) {
-    jwt.sign(playload, screen, callback);
+function sign(pyload, secret, time) {
+    return jwt.sign(pyload, secret, {
+        expiresIn: time
+    });
 }
 /* verify token
     @Param<token>  token
     @Param<secret> privat key
     @Param<callback> function response
 */
-function verify(token, secret, callback) {
-    jwt.verify(token, secret, callback);
+function verify(token, secret) {
+    return jwt.verify(token, secret);
 }
 
 module.exports = {
