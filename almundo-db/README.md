@@ -1,5 +1,8 @@
 # Almundo-DB
 Es aplicación Nodejs utiliza (Sequalize)[http://docs.sequelizejs.com/] como ORM para crea una acceso a datos multimotor es usado en proyectos como la capa de acceso a datos 
+```
+ > npm install
+```
 
 ## inicio
 
