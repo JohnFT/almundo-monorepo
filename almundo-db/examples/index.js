@@ -3,7 +3,9 @@ const Sequelize = require('sequelize');
 const debug = require('debug')('almundo:db:setup');
 const chalk = require('chalk'); // Estilizar string en la consola
 const db = require('../');
-const Op = Sequelize.Op
+const Op = Sequelize.Op;
+const amenitiesMock = require('../mocks/amenities');
+const hotelsMock = require('../mocks/hotels');
 
 async function run() {
 
@@ -27,22 +29,33 @@ async function run() {
         memory: false
     }
 
-    const hotels = await db(config).catch(handleFatalError);
+    const models = await db(config).catch(handleFatalError);
 
     try {
-        await hotels.createOrUpdate({
-            id: '11111111',
-            uuid: new Date().toDateString(),
-            name: 'Hotel Johns',
-            stars: 5,
-            price: 1994.18,
-            image: '4900059_30_b.jpg',
-            amenities: [
-                'business-center'
-            ]
-        });
-        const hotel = await hotels.findAll();
-        console.log(hotel.length);
+        await Promise.all(amenitiesMock.map(async a => {
+            await models.Amenities.createOrUpdate(a);
+        }))
+        await Promise.all(hotelsMock.map(async h => {
+            await models.Hotels.createOrUpdate(h);
+        }))
+
+        const ha = []
+        hotelsMock.map(h => {
+            h.amenities.map(a => {
+                ha.push({
+                    hotelId: h.id,
+                    amenitieId: a.id
+                })
+            })
+        })
+        await Promise.all(ha.map(async h => {
+            await models.HotelAmenities.createOrUpdate(h);
+        }));
+        const amen = await models.Amenities.findAll();
+        const hot = await models.Hotels.findAll();
+        const ham = await models.HotelAmenities.findAll();
+
+        console.log(amen.length, hot.length, ham.length);
     } catch (err) {
         handleFatalError(err);
     }

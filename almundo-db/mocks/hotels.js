@@ -3,13 +3,13 @@ const hotels = [{
         name: 'Hotel Stefanos',
         stars: 3,
         price: 994.18,
-        image: '4900059_30_b.jpg',
+        image: 'images/hotels/4900059_30_b.jpg',
         amenities: [
-            'safety-box',
-            'nightclub',
-            'deep-soaking-bathtub',
-            'beach',
-            'business-center'
+            1,
+            2,
+            3,
+            4,
+            5
         ]
     },
     {
@@ -17,13 +17,13 @@ const hotels = [{
         name: 'Hotel Santa Cruz',
         stars: 3,
         price: 1267.57,
-        image: '6623490_6_b.jpg',
+        image: 'images/hotels/6623490_6_b.jpg',
         amenities: [
-            'nightclub',
-            'business-center',
-            'bathtub',
-            'newspaper',
-            'restaurant'
+            2,
+            5,
+            6,
+            7,
+            8
         ]
     },
     {
@@ -31,13 +31,13 @@ const hotels = [{
         name: 'NM Lima Hotel',
         stars: 4,
         price: 1445.5,
-        image: '981018_26_b.jpg',
+        image: 'images/hotels/981018_26_b.jpg',
         amenities: [
-            'business-center',
-            'nightclub',
-            'deep-soaking-bathtub',
-            'fitness-center',
-            'garden'
+            5,
+            2,
+            3,
+            9,
+            10
         ]
     },
     {
@@ -45,13 +45,13 @@ const hotels = [{
         name: 'El Golf Hotel Boutique',
         stars: 4,
         price: 1513.45,
-        image: '1191401_110_b.jpg',
+        image: 'images/hotels/1191401_110_b.jpg',
         amenities: [
-            'safety-box',
-            'bathrobes',
-            'business-center',
-            'beach-pool-facilities',
-            'restaurant'
+            1,
+            11,
+            5,
+            12,
+            8
         ]
     },
     {
@@ -59,13 +59,13 @@ const hotels = [{
         name: 'Casa Andina Select Miraflores',
         stars: 4,
         price: 1545.46,
-        image: '2a5bb415_b.jpg',
+        image: 'images/hotels/2a5bb415_b.jpg',
         amenities: [
-            'coffe-maker',
-            'safety-box',
-            'restaurant',
-            'garden',
-            'children-club'
+            13,
+            1,
+            8,
+            10,
+            14
         ]
     },
     {
@@ -73,13 +73,13 @@ const hotels = [{
         name: 'Radisson Hotel Decapolis Miraflores',
         stars: 4,
         price: 2314.61,
-        image: '46512_29_b.jpg',
+        image: 'images/hotels/46512_29_b.jpg',
         amenities: [
-            'bathtub',
-            'separate-bredroom',
-            'safety-box',
-            'business-center',
-            'beach-pool-facilities'
+            6,
+            15,
+            1,
+            5,
+            12
         ]
     },
     {
@@ -87,13 +87,13 @@ const hotels = [{
         name: 'Antigua Miraflores Hotel',
         stars: 3,
         price: 1862.16,
-        image: '480835_73_b.jpg',
+        image: 'images/hotels/480835_73_b.jpg',
         amenities: [
-            'restaurant',
-            'separate-bredroom',
-            'business-center',
-            'bathrobes',
-            'beach'
+            8,
+            15,
+            5,
+            11,
+            4
         ]
     },
     {
@@ -101,13 +101,13 @@ const hotels = [{
         name: 'Casa Falleri Boutique Hotel',
         stars: 3,
         price: 1634.03,
-        image: '11908954_150_b.jpg',
+        image: 'images/hotels/11908954_150_b.jpg',
         amenities: [
-            'nightclub',
-            'garden',
-            'coffe-maker',
-            'kitchen-facilities',
-            'deep-soaking-bathtub'
+            2,
+            10,
+            13,
+            16,
+            3
         ]
     },
     {
@@ -115,13 +115,13 @@ const hotels = [{
         name: 'Habitat Hotel',
         stars: 3,
         price: 1061.79,
-        image: '12808943_13_b.jpg',
+        image: 'images/hotels/12808943_13_b.jpg',
         amenities: [
-            'beach-pool-facilities',
-            'deep-soaking-bathtub',
-            'bathtub',
-            'children-club',
-            'beach'
+            12,
+            3,
+            6,
+            14,
+            4
         ]
     },
     {
@@ -129,13 +129,13 @@ const hotels = [{
         name: 'Hotel San Blas',
         stars: 3,
         price: 1106.56,
-        image: '4417477_17_b.jpg',
+        image: 'images/hotels/4417477_17_b.jpg',
         amenities: [
-            'coffe-maker',
-            'deep-soaking-bathtub',
-            'business-center',
-            'bathrobes',
-            'safety-box'
+            13,
+            3,
+            5,
+            11,
+            1
         ]
     },
     {
@@ -143,13 +143,13 @@ const hotels = [{
         name: 'Palmetto Hotel Business San Borja',
         stars: 3,
         price: 1105.87,
-        image: '4626475_1_b.jpg',
+        image: 'images/hotels/4626475_1_b.jpg',
         amenities: [
-            'safety-box',
-            'coffe-maker',
-            'restaurant',
-            'separate-bredroom',
-            'bathtub'
+            1,
+            13,
+            8,
+            15,
+            6
         ]
     },
     {
@@ -157,13 +157,13 @@ const hotels = [{
         name: 'Foresta Hotel Lima',
         stars: 4,
         price: 1941.99,
-        image: '200684_222_b.jpg',
+        image: 'images/hotels/200684_222_b.jpg',
         amenities: [
-            'bathtub',
-            'kitchen-facilities',
-            'nightclub',
-            'deep-soaking-bathtub',
-            'garden'
+            6,
+            16,
+            2,
+            3,
+            10
         ]
     },
     {
@@ -171,13 +171,13 @@ const hotels = [{
         name: 'Royal Inca Hotel',
         stars: 2,
         price: 683.5,
-        image: '6900423_6_b.jpg',
+        image: 'images/hotels/6900423_6_b.jpg',
         amenities: [
-            'newspaper',
-            'coffe-maker',
-            'safety-box',
-            'kitchen-facilities',
-            'bathtub'
+            7,
+            13,
+            1,
+            16,
+            6
         ]
     },
     {
@@ -185,13 +185,13 @@ const hotels = [{
         name: 'Bayview Hotel',
         stars: 3,
         price: 1043.88,
-        image: '1231695_139_b.jpg',
+        image: 'images/hotels/1231695_139_b.jpg',
         amenities: [
-            'bathtub',
-            'deep-soaking-bathtub',
-            'kitchen-facilities',
-            'fitness-center',
-            'nightclub'
+            6,
+            3,
+            16,
+            9,
+            2
         ]
     },
     {
@@ -199,13 +199,13 @@ const hotels = [{
         name: 'Casa Andina Premium Miraflores',
         stars: 4,
         price: 1887.2,
-        image: '2039609_120_b.jpg',
+        image: 'images/hotels/2039609_120_b.jpg',
         amenities: [
-            'children-club',
-            'newspaper',
-            'restaurant',
-            'separate-bredroom',
-            'nightclub'
+            14,
+            7,
+            8,
+            15,
+            2
         ]
     },
     {
@@ -213,13 +213,13 @@ const hotels = [{
         name: 'New Corpac Hotel',
         stars: 3,
         price: 886.12,
-        image: '1876197_31_b.jpg',
+        image: 'images/hotels/1876197_31_b.jpg',
         amenities: [
-            'children-club',
-            'restaurant',
-            'fitness-center',
-            'bathrobes',
-            'safety-box'
+            14,
+            8,
+            9,
+            11,
+            1
         ]
     },
     {
@@ -227,13 +227,13 @@ const hotels = [{
         name: 'Qorianka Hotel',
         stars: 2,
         price: 1024.91,
-        image: '9320547_26_b.jpg',
+        image: 'images/hotels/9320547_26_b.jpg',
         amenities: [
-            'children-club',
-            'garden',
-            'deep-soaking-bathtub',
-            'newspaper',
-            'kitchen-facilities'
+            14,
+            10,
+            3,
+            7,
+            16
         ]
     },
     {
@@ -241,13 +241,13 @@ const hotels = [{
         name: 'Casa Suyay',
         stars: 3,
         price: 1695.37,
-        image: '8962073_23_b.jpg',
+        image: 'images/hotels/8962073_23_b.jpg',
         amenities: [
-            'kitchen-facilities',
-            'restaurant',
-            'nightclub',
-            'newspaper',
-            'coffe-maker'
+            16,
+            8,
+            2,
+            7,
+            13
         ]
     },
     {
@@ -255,13 +255,13 @@ const hotels = [{
         name: 'Casa Bella Miraflores',
         stars: 3,
         price: 842.54,
-        image: '4479382_65_b.jpg',
+        image: 'images/hotels/4479382_65_b.jpg',
         amenities: [
-            'garden',
-            'kitchen-facilities',
-            'bathtub',
-            'safety-box',
-            'business-center'
+            10,
+            16,
+            6,
+            1,
+            5
         ]
     },
     {
@@ -269,13 +269,13 @@ const hotels = [{
         name: 'Tierra Viva Miraflores Larco',
         stars: 3,
         price: 1431.47,
-        image: '6153044_28_b.jpg',
+        image: 'images/hotels/6153044_28_b.jpg',
         amenities: [
-            'beach-pool-facilities',
-            'newspaper',
-            'nightclub',
-            'bathrobes',
-            'deep-soaking-bathtub'
+            12,
+            7,
+            2,
+            11,
+            3
         ]
     },
     {
@@ -283,13 +283,13 @@ const hotels = [{
         name: 'Atton San Isidro',
         stars: 4,
         price: 1943.69,
-        image: '4357289_55_b.jpg',
+        image: 'images/hotels/4357289_55_b.jpg',
         amenities: [
-            'newspaper',
-            'safety-box',
-            'business-center',
-            'coffe-maker',
-            'restaurant'
+            7,
+            1,
+            5,
+            13,
+            8
         ]
     },
     {
@@ -297,13 +297,13 @@ const hotels = [{
         name: 'Urbano Apartment Miraflores Pardo',
         stars: 3,
         price: 1258.4,
-        image: '10968139_27_b.jpg',
+        image: 'images/hotels/10968139_27_b.jpg',
         amenities: [
-            'deep-soaking-bathtub',
-            'bathtub',
-            'fitness-center',
-            'restaurant',
-            'bathrobes'
+            3,
+            6,
+            9,
+            8,
+            11
         ]
     },
     {
@@ -311,13 +311,13 @@ const hotels = [{
         name: 'Los Tallanes Hotel & Suites',
         stars: 3,
         price: 2014.68,
-        image: '12287657_13_b.jpg',
+        image: 'images/hotels/12287657_13_b.jpg',
         amenities: [
-            'nightclub',
-            'beach',
-            'safety-box',
-            'deep-soaking-bathtub',
-            'business-center'
+            2,
+            4,
+            1,
+            3,
+            5
         ]
     },
     {
@@ -325,13 +325,13 @@ const hotels = [{
         name: 'Hotel Ferre Miraflores',
         stars: 3,
         price: 1183.19,
-        image: '3045476_5_b.jpg',
+        image: 'images/hotels/3045476_5_b.jpg',
         amenities: [
-            'safety-box',
-            'newspaper',
-            'garden',
-            'separate-bredroom',
-            'children-club'
+            1,
+            7,
+            10,
+            15,
+            14
         ]
     },
     {
@@ -339,13 +339,13 @@ const hotels = [{
         name: 'Arawi Lima Miraflores',
         stars: 4,
         price: 2099.1,
-        image: '5429945_8_b.jpg',
+        image: 'images/hotels/5429945_8_b.jpg',
         amenities: [
-            'fitness-center',
-            'beach',
-            'children-club',
-            'nightclub',
-            'deep-soaking-bathtub'
+            9,
+            4,
+            14,
+            2,
+            3
         ]
     },
     {
@@ -353,13 +353,13 @@ const hotels = [{
         name: 'Peru Star Boutique Apartments Hotel',
         stars: 4,
         price: 1093.37,
-        image: '3124310_1_b.jpg',
+        image: 'images/hotels/3124310_1_b.jpg',
         amenities: [
-            'bathtub',
-            'restaurant',
-            'deep-soaking-bathtub',
-            'bathrobes',
-            'kitchen-facilities'
+            6,
+            8,
+            3,
+            11,
+            16
         ]
     },
     {
@@ -367,13 +367,13 @@ const hotels = [{
         name: 'Del Pilar Miraflores Hotel',
         stars: 3,
         price: 1713.42,
-        image: '412713_46_b.jpg',
+        image: 'images/hotels/412713_46_b.jpg',
         amenities: [
-            'newspaper',
-            'coffe-maker',
-            'bathtub',
-            'kitchen-facilities',
-            'deep-soaking-bathtub'
+            7,
+            13,
+            6,
+            16,
+            3
         ]
     },
     {
@@ -381,13 +381,13 @@ const hotels = [{
         name: '1900 Hostel',
         stars: 1,
         price: 596.7,
-        image: '4850335_10_b.jpg',
+        image: 'images/hotels/4850335_10_b.jpg',
         amenities: [
-            'coffe-maker',
-            'garden',
-            'kitchen-facilities',
-            'beach-pool-facilities',
-            'nightclub'
+            13,
+            10,
+            16,
+            12,
+            2
         ]
     },
     {
@@ -395,13 +395,13 @@ const hotels = [{
         name: 'Machu Picchu Suites',
         stars: 3,
         price: 794.74,
-        image: '3688061_52_b.jpg',
+        image: 'images/hotels/3688061_52_b.jpg',
         amenities: [
-            'beach',
-            'kitchen-facilities',
-            'bathtub',
-            'garden',
-            'restaurant'
+            4,
+            16,
+            6,
+            10,
+            8
         ]
     },
     {
@@ -409,13 +409,13 @@ const hotels = [{
         name: 'Hotel Señorial',
         stars: 3,
         price: 1193.14,
-        image: '7700456_3_b.jpg',
+        image: 'images/hotels/7700456_3_b.jpg',
         amenities: [
-            'business-center',
-            'beach',
-            'garden',
-            'separate-bredroom',
-            'newspaper'
+            5,
+            4,
+            10,
+            15,
+            7
         ]
     },
     {
@@ -423,13 +423,13 @@ const hotels = [{
         name: 'Las Palmas',
         stars: 3,
         price: 1118.45,
-        image: '4618948_40_b.jpg',
+        image: 'images/hotels/4618948_40_b.jpg',
         amenities: [
-            'beach',
-            'deep-soaking-bathtub',
-            'kitchen-facilities',
-            'beach-pool-facilities',
-            'newspaper'
+            4,
+            3,
+            16,
+            12,
+            7
         ]
     },
     {
@@ -437,13 +437,13 @@ const hotels = [{
         name: 'Miraflores Lodge',
         stars: 3,
         price: 1090.91,
-        image: '3612838_12_b.jpg',
+        image: 'images/hotels/3612838_12_b.jpg',
         amenities: [
-            'coffe-maker',
-            'restaurant',
-            'kitchen-facilities',
-            'bathtub',
-            'nightclub'
+            13,
+            8,
+            16,
+            6,
+            2
         ]
     },
     {
@@ -451,13 +451,13 @@ const hotels = [{
         name: 'Casa Wayra Bed & Breakfast Miraflores',
         stars: 3,
         price: 1175.85,
-        image: '3688064_92_b.jpg',
+        image: 'images/hotels/3688064_92_b.jpg',
         amenities: [
-            'newspaper',
-            'beach-pool-facilities',
-            'coffe-maker',
-            'deep-soaking-bathtub',
-            'kitchen-facilities'
+            7,
+            12,
+            13,
+            3,
+            16
         ]
     },
     {
@@ -465,13 +465,13 @@ const hotels = [{
         name: 'HosteLima',
         stars: 2,
         price: 297.65,
-        image: '4982472_16_b.jpg',
+        image: 'images/hotels/4982472_16_b.jpg',
         amenities: [
-            'business-center',
-            'safety-box',
-            'kitchen-facilities',
-            'restaurant',
-            'fitness-center'
+            5,
+            1,
+            16,
+            8,
+            9
         ]
     },
     {
@@ -479,13 +479,13 @@ const hotels = [{
         name: '3B Barranco`s Chic and Basic B&B',
         stars: 3,
         price: 1488.42,
-        image: '9ae3980d_b.jpg',
+        image: 'images/hotels/9ae3980d_b.jpg',
         amenities: [
-            'restaurant',
-            'children-club',
-            'nightclub',
-            'safety-box',
-            'beach'
+            8,
+            14,
+            2,
+            1,
+            4
         ]
     },
     {
@@ -493,13 +493,13 @@ const hotels = [{
         name: 'Hotel El Ducado',
         stars: 3,
         price: 1624.1,
-        image: '1688562_53_b.jpg',
+        image: 'images/hotels/1688562_53_b.jpg',
         amenities: [
-            'kitchen-facilities',
-            'garden',
-            'nightclub',
-            'business-center',
-            'safety-box'
+            16,
+            10,
+            2,
+            5,
+            1
         ]
     },
     {
@@ -507,13 +507,13 @@ const hotels = [{
         name: 'LYNIK La Casa de Blanca',
         stars: 2,
         price: 676.59,
-        image: '4846837_5_b.jpg',
+        image: 'images/hotels/4846837_5_b.jpg',
         amenities: [
-            'deep-soaking-bathtub',
-            'beach-pool-facilities',
-            'bathtub',
-            'separate-bredroom',
-            'kitchen-facilities'
+            3,
+            12,
+            6,
+            15,
+            16
         ]
     },
     {
@@ -521,13 +521,13 @@ const hotels = [{
         name: 'Country Club Lima Hotel',
         stars: 5,
         price: 3109.07,
-        image: '115596_172_b.jpg',
+        image: 'images/hotels/115596_172_b.jpg',
         amenities: [
-            'restaurant',
-            'garden',
-            'safety-box',
-            'newspaper',
-            'beach-pool-facilities'
+            8,
+            10,
+            1,
+            7,
+            12
         ]
     },
     {
@@ -535,13 +535,13 @@ const hotels = [{
         name: 'Hotel Libertador Lima',
         stars: 4,
         price: 1708.74,
-        image: '519318_82_b.jpg',
+        image: 'images/hotels/519318_82_b.jpg',
         amenities: [
-            'bathrobes',
-            'beach-pool-facilities',
-            'business-center',
-            'newspaper',
-            'nightclub'
+            11,
+            12,
+            5,
+            7,
+            2
         ]
     },
     {
@@ -549,13 +549,13 @@ const hotels = [{
         name: 'Los Girasoles',
         stars: 3,
         price: 1177.32,
-        image: '3474909_52_b.jpg',
+        image: 'images/hotels/3474909_52_b.jpg',
         amenities: [
-            'kitchen-facilities',
-            'bathtub',
-            'beach',
-            'fitness-center',
-            'children-club'
+            16,
+            6,
+            4,
+            9,
+            14
         ]
     },
     {
@@ -563,13 +563,13 @@ const hotels = [{
         name: 'Melia Lima',
         stars: 4,
         price: 2099.3,
-        image: '484066_158_b.jpg',
+        image: 'images/hotels/484066_158_b.jpg',
         amenities: [
-            'safety-box',
-            'garden',
-            'nightclub',
-            'beach-pool-facilities',
-            'deep-soaking-bathtub'
+            1,
+            10,
+            2,
+            12,
+            3
         ]
     },
     {
@@ -577,13 +577,13 @@ const hotels = [{
         name: 'Casa Aika',
         stars: 3,
         price: 757.58,
-        image: '5987363_77_b.jpg',
+        image: 'images/hotels/5987363_77_b.jpg',
         amenities: [
-            'newspaper',
-            'business-center',
-            'nightclub',
-            'children-club',
-            'deep-soaking-bathtub'
+            7,
+            5,
+            2,
+            14,
+            3
         ]
     },
     {
@@ -591,13 +591,13 @@ const hotels = [{
         name: 'Kingdom Hotel',
         stars: 3,
         price: 1754.36,
-        image: '9365800_92_b.jpg',
+        image: 'images/hotels/9365800_92_b.jpg',
         amenities: [
-            'children-club',
-            'bathtub',
-            'beach',
-            'business-center',
-            'beach-pool-facilities'
+            14,
+            6,
+            4,
+            5,
+            12
         ]
     },
     {
@@ -605,13 +605,13 @@ const hotels = [{
         name: 'Hotel Panamericano',
         stars: 3,
         price: 798.53,
-        image: '11920422_40_b.jpg',
+        image: 'images/hotels/11920422_40_b.jpg',
         amenities: [
-            'bathtub',
-            'children-club',
-            'beach',
-            'newspaper',
-            'kitchen-facilities'
+            6,
+            14,
+            4,
+            7,
+            16
         ]
     },
     {
@@ -619,13 +619,13 @@ const hotels = [{
         name: 'Condor`s House - Hostel',
         stars: 2,
         price: 301.86,
-        image: '5030807_9_b.jpg',
+        image: 'images/hotels/5030807_9_b.jpg',
         amenities: [
-            'newspaper',
-            'separate-bredroom',
-            'nightclub',
-            'restaurant',
-            'garden'
+            7,
+            15,
+            2,
+            8,
+            10
         ]
     },
     {
@@ -633,13 +633,13 @@ const hotels = [{
         name: 'House Inn Backpacker',
         stars: 2,
         price: 280.8,
-        image: '4982482_7_b.jpg',
+        image: 'images/hotels/4982482_7_b.jpg',
         amenities: [
-            'safety-box',
-            'beach-pool-facilities',
-            'kitchen-facilities',
-            'separate-bredroom',
-            'bathrobes'
+            1,
+            12,
+            16,
+            15,
+            11
         ]
     },
     {
@@ -647,13 +647,13 @@ const hotels = [{
         name: 'La Casa Nostra Hostel',
         stars: 2,
         price: 1228.5,
-        image: '2537805_1_b.jpg',
+        image: 'images/hotels/2537805_1_b.jpg',
         amenities: [
-            'kitchen-facilities',
-            'fitness-center',
-            'garden',
-            'nightclub',
-            'deep-soaking-bathtub'
+            16,
+            9,
+            10,
+            2,
+            3
         ]
     },
     {
@@ -661,13 +661,13 @@ const hotels = [{
         name: 'Hotel Kamana',
         stars: 3,
         price: 846.93,
-        image: '4478078_39_b.jpg',
+        image: 'images/hotels/4478078_39_b.jpg',
         amenities: [
-            'bathtub',
-            'fitness-center',
-            'restaurant',
-            'newspaper',
-            'separate-bredroom'
+            6,
+            9,
+            8,
+            7,
+            15
         ]
     },
     {
@@ -675,13 +675,13 @@ const hotels = [{
         name: 'Embajadores Hotel',
         stars: 3,
         price: 1031.9,
-        image: '386779_53_b.jpg',
+        image: 'images/hotels/386779_53_b.jpg',
         amenities: [
-            'garden',
-            'nightclub',
-            'bathrobes',
-            'coffe-maker',
-            'business-center'
+            10,
+            2,
+            11,
+            13,
+            5
         ]
     },
     {
@@ -689,13 +689,13 @@ const hotels = [{
         name: 'Sm Hotel And Business',
         stars: 3,
         price: 969.64,
-        image: '4688439_88_b.jpg',
+        image: 'images/hotels/4688439_88_b.jpg',
         amenities: [
-            'children-club',
-            'separate-bredroom',
-            'deep-soaking-bathtub',
-            'bathtub',
-            'restaurant'
+            14,
+            15,
+            3,
+            6,
+            8
         ]
     },
     {
@@ -703,13 +703,13 @@ const hotels = [{
         name: 'Fiesta Hotel & Casino',
         stars: 4,
         price: 2927.68,
-        image: '1777231_85_b.jpg',
+        image: 'images/hotels/1777231_85_b.jpg',
         amenities: [
-            'deep-soaking-bathtub',
-            'fitness-center',
-            'separate-bredroom',
-            'coffe-maker',
-            'restaurant'
+            3,
+            9,
+            15,
+            13,
+            8
         ]
     },
     {
@@ -717,13 +717,13 @@ const hotels = [{
         name: 'San Isidro Inn',
         stars: 3,
         price: 1053,
-        image: '3952922_27_b.jpg',
+        image: 'images/hotels/3952922_27_b.jpg',
         amenities: [
-            'children-club',
-            'bathtub',
-            'fitness-center',
-            'separate-bredroom',
-            'newspaper'
+            14,
+            6,
+            9,
+            15,
+            7
         ]
     },
     {
@@ -731,13 +731,13 @@ const hotels = [{
         name: 'Posada Peregrinus',
         stars: 2,
         price: 614.25,
-        image: '4546549_9_b.jpg',
+        image: 'images/hotels/4546549_9_b.jpg',
         amenities: [
-            'nightclub',
-            'kitchen-facilities',
-            'fitness-center',
-            'bathrobes',
-            'separate-bredroom'
+            2,
+            16,
+            9,
+            11,
+            15
         ]
     },
     {
@@ -745,13 +745,13 @@ const hotels = [{
         name: 'Courtyard Lima Miraflores',
         stars: 4,
         price: 2240.34,
-        image: '9866569_13_b.jpg',
+        image: 'images/hotels/9866569_13_b.jpg',
         amenities: [
-            'separate-bredroom',
-            'safety-box',
-            'beach-pool-facilities',
-            'kitchen-facilities',
-            'deep-soaking-bathtub'
+            15,
+            1,
+            12,
+            16,
+            3
         ]
     },
     {
@@ -759,13 +759,13 @@ const hotels = [{
         name: 'Hotel Estelar Miraflores',
         stars: 4,
         price: 1927.17,
-        image: 'b3e281b1_b.jpg',
+        image: 'images/hotels/b3e281b1_b.jpg',
         amenities: [
-            'nightclub',
-            'safety-box',
-            'business-center',
-            'bathtub',
-            'coffe-maker'
+            2,
+            1,
+            5,
+            6,
+            13
         ]
     },
     {
@@ -773,13 +773,13 @@ const hotels = [{
         name: 'Swissôtel Lima',
         stars: 5,
         price: 3397.94,
-        image: 'd44c63f1_b.jpg',
+        image: 'images/hotels/d44c63f1_b.jpg',
         amenities: [
-            'kitchen-facilities',
-            'coffe-maker',
-            'deep-soaking-bathtub',
-            'bathrobes',
-            'newspaper'
+            16,
+            13,
+            3,
+            11,
+            7
         ]
     },
     {
@@ -787,13 +787,13 @@ const hotels = [{
         name: 'Luxury Hotel Inkari',
         stars: 4,
         price: 2049.84,
-        image: '9438646_27_b.jpg',
+        image: 'images/hotels/9438646_27_b.jpg',
         amenities: [
-            'bathtub',
-            'kitchen-facilities',
-            'beach',
-            'fitness-center',
-            'coffe-maker'
+            6,
+            16,
+            4,
+            9,
+            13
         ]
     },
     {
@@ -801,13 +801,13 @@ const hotels = [{
         name: 'La Paz Apart Hotel',
         stars: 3,
         price: 2535.14,
-        image: '4099852_34_b.jpg',
+        image: 'images/hotels/4099852_34_b.jpg',
         amenities: [
-            'bathrobes',
-            'newspaper',
-            'deep-soaking-bathtub',
-            'garden',
-            'kitchen-facilities'
+            11,
+            7,
+            3,
+            10,
+            16
         ]
     },
     {
@@ -815,13 +815,13 @@ const hotels = [{
         name: 'Basadre Suites Boutique Hotel',
         stars: 3,
         price: 997.16,
-        image: '1110876_60_b.jpg',
+        image: 'images/hotels/1110876_60_b.jpg',
         amenities: [
-            'bathrobes',
-            'deep-soaking-bathtub',
-            'safety-box',
-            'separate-bredroom',
-            'fitness-center'
+            11,
+            3,
+            1,
+            15,
+            9
         ]
     },
     {
@@ -829,13 +829,13 @@ const hotels = [{
         name: 'Hotel Melodia',
         stars: 3,
         price: 1053,
-        image: '7864635_1_b.jpg',
+        image: 'images/hotels/7864635_1_b.jpg',
         amenities: [
-            'garden',
-            'bathtub',
-            'bathrobes',
-            'safety-box',
-            'separate-bredroom'
+            10,
+            6,
+            11,
+            1,
+            15
         ]
     },
     {
@@ -843,13 +843,13 @@ const hotels = [{
         name: 'Hotel Plaza Mayor',
         stars: 2,
         price: 469.94,
-        image: '9866986_18_b.jpg',
+        image: 'images/hotels/9866986_18_b.jpg',
         amenities: [
-            'fitness-center',
-            'garden',
-            'deep-soaking-bathtub',
-            'coffe-maker',
-            'nightclub'
+            9,
+            10,
+            3,
+            13,
+            2
         ]
     },
     {
@@ -857,13 +857,13 @@ const hotels = [{
         name: 'Hotel Nobility',
         stars: 3,
         price: 1547.88,
-        image: '6214511_57_b.jpg',
+        image: 'images/hotels/6214511_57_b.jpg',
         amenities: [
-            'kitchen-facilities',
-            'garden',
-            'nightclub',
-            'children-club',
-            'safety-box'
+            16,
+            10,
+            2,
+            14,
+            1
         ]
     },
     {
@@ -871,13 +871,13 @@ const hotels = [{
         name: 'Casa Andina Standard Miraflores Centro',
         stars: 3,
         price: 1218.06,
-        image: '85248126_b.jpg',
+        image: 'images/hotels/85248126_b.jpg',
         amenities: [
-            'fitness-center',
-            'children-club',
-            'separate-bredroom',
-            'deep-soaking-bathtub',
-            'bathrobes'
+            9,
+            14,
+            15,
+            3,
+            11
         ]
     },
     {
@@ -885,13 +885,13 @@ const hotels = [{
         name: 'Wyndham Costa Del Sol Lima City',
         stars: 4,
         price: 1749.25,
-        image: '10210122_194_b.jpg',
+        image: 'images/hotels/10210122_194_b.jpg',
         amenities: [
-            'children-club',
-            'beach',
-            'nightclub',
-            'beach-pool-facilities',
-            'deep-soaking-bathtub'
+            14,
+            4,
+            2,
+            12,
+            3
         ]
     },
     {
@@ -899,13 +899,13 @@ const hotels = [{
         name: 'Sonesta Hotel El Olivar Lima',
         stars: 4,
         price: 2339.9,
-        image: '525844_90_b.jpg',
+        image: 'images/hotels/525844_90_b.jpg',
         amenities: [
-            'restaurant',
-            'coffe-maker',
-            'business-center',
-            'nightclub',
-            'safety-box'
+            8,
+            13,
+            5,
+            2,
+            1
         ]
     },
     {
@@ -913,13 +913,13 @@ const hotels = [{
         name: 'Thunderbird Hotels J.Pardo',
         stars: 3,
         price: 2237.4,
-        image: '1774520_182_b.jpg',
+        image: 'images/hotels/1774520_182_b.jpg',
         amenities: [
-            'bathrobes',
-            'coffe-maker',
-            'children-club',
-            'bathtub',
-            'kitchen-facilities'
+            11,
+            13,
+            14,
+            6,
+            16
         ]
     },
     {
@@ -927,13 +927,13 @@ const hotels = [{
         name: 'La Hacienda Hotel Miraflores',
         stars: 3,
         price: 2071.2,
-        image: '430037_31_b.jpg',
+        image: 'images/hotels/430037_31_b.jpg',
         amenities: [
-            'newspaper',
-            'beach-pool-facilities',
-            'beach',
-            'garden',
-            'fitness-center'
+            7,
+            12,
+            4,
+            10,
+            9
         ]
     },
     {
@@ -941,13 +941,13 @@ const hotels = [{
         name: 'El Angolo Lima',
         stars: 3,
         price: 1864.08,
-        image: '5981696_40_b.jpg',
+        image: 'images/hotels/5981696_40_b.jpg',
         amenities: [
-            'kitchen-facilities',
-            'bathrobes',
-            'restaurant',
-            'garden',
-            'newspaper'
+            16,
+            11,
+            8,
+            10,
+            7
         ]
     },
     {
@@ -955,13 +955,13 @@ const hotels = [{
         name: 'Hostal Porta',
         stars: 3,
         price: 629.8,
-        image: '1688561_29_b.jpg',
+        image: 'images/hotels/1688561_29_b.jpg',
         amenities: [
-            'children-club',
-            'separate-bredroom',
-            'nightclub',
-            'garden',
-            'bathtub'
+            14,
+            15,
+            2,
+            10,
+            6
         ]
     },
     {
@@ -969,13 +969,13 @@ const hotels = [{
         name: 'Hotel Novotel Lima',
         stars: 4,
         price: 2091.07,
-        image: '2803127_64_b.jpg',
+        image: 'images/hotels/2803127_64_b.jpg',
         amenities: [
-            'beach',
-            'kitchen-facilities',
-            'children-club',
-            'newspaper',
-            'beach-pool-facilities'
+            4,
+            16,
+            14,
+            7,
+            12
         ]
     },
     {
@@ -983,13 +983,13 @@ const hotels = [{
         name: 'ibis Larco Miraflores',
         stars: 3,
         price: 1156.91,
-        image: '917bd6d1_b.jpg',
+        image: 'images/hotels/917bd6d1_b.jpg',
         amenities: [
-            'safety-box',
-            'deep-soaking-bathtub',
-            'bathrobes',
-            'bathtub',
-            'business-center'
+            1,
+            3,
+            11,
+            6,
+            5
         ]
     },
     {
@@ -997,13 +997,13 @@ const hotels = [{
         name: 'Miraflores Suites Centro',
         stars: 3,
         price: 841.45,
-        image: '3334784_86_b.jpg',
+        image: 'images/hotels/3334784_86_b.jpg',
         amenities: [
-            'beach',
-            'kitchen-facilities',
-            'newspaper',
-            'separate-bredroom',
-            'nightclub'
+            4,
+            16,
+            7,
+            15,
+            2
         ]
     },
     {
@@ -1011,13 +1011,13 @@ const hotels = [{
         name: 'Radisson Hotel San Isidro',
         stars: 4,
         price: 1761.4,
-        image: '1580314_67_b.jpg',
+        image: 'images/hotels/1580314_67_b.jpg',
         amenities: [
-            'restaurant',
-            'children-club',
-            'newspaper',
-            'deep-soaking-bathtub',
-            'business-center'
+            8,
+            14,
+            7,
+            3,
+            5
         ]
     },
     {
@@ -1025,13 +1025,13 @@ const hotels = [{
         name: 'Hotel Boutique Huaca Wasi',
         stars: 3,
         price: 1715.28,
-        image: '5379215_11_b.jpg',
+        image: 'images/hotels/5379215_11_b.jpg',
         amenities: [
-            'fitness-center',
-            'nightclub',
-            'beach-pool-facilities',
-            'garden',
-            'business-center'
+            9,
+            2,
+            12,
+            10,
+            5
         ]
     },
     {
@@ -1039,13 +1039,13 @@ const hotels = [{
         name: 'Hotel Inka Path',
         stars: 2,
         price: 1088.1,
-        image: '9649999_27_b.jpg',
+        image: 'images/hotels/9649999_27_b.jpg',
         amenities: [
-            'fitness-center',
-            'deep-soaking-bathtub',
-            'garden',
-            'separate-bredroom',
-            'safety-box'
+            9,
+            3,
+            10,
+            15,
+            1
         ]
     },
     {
@@ -1053,13 +1053,13 @@ const hotels = [{
         name: 'Plaza del Bosque Hotel',
         stars: 4,
         price: 1889.37,
-        image: '48784_97_b.jpg',
+        image: 'images/hotels/48784_97_b.jpg',
         amenities: [
-            'deep-soaking-bathtub',
-            'fitness-center',
-            'kitchen-facilities',
-            'newspaper',
-            'children-club'
+            3,
+            9,
+            16,
+            7,
+            14
         ]
     },
     {
@@ -1067,13 +1067,13 @@ const hotels = [{
         name: 'Suites Antique Apart Hotel',
         stars: 3,
         price: 1594.88,
-        image: '11820110_10_b.jpg',
+        image: 'images/hotels/11820110_10_b.jpg',
         amenities: [
-            'restaurant',
-            'coffe-maker',
-            'kitchen-facilities',
-            'newspaper',
-            'deep-soaking-bathtub'
+            8,
+            13,
+            16,
+            7,
+            3
         ]
     },
     {
@@ -1081,13 +1081,13 @@ const hotels = [{
         name: 'Royal Park Hotel',
         stars: 4,
         price: 3141.14,
-        image: '583479_86_b.jpg',
+        image: 'images/hotels/583479_86_b.jpg',
         amenities: [
-            'safety-box',
-            'deep-soaking-bathtub',
-            'coffe-maker',
-            'bathrobes',
-            'garden'
+            1,
+            3,
+            13,
+            11,
+            10
         ]
     },
     {
@@ -1095,13 +1095,13 @@ const hotels = [{
         name: 'El Faro Inn',
         stars: 3,
         price: 855.22,
-        image: '9817258_55_b.jpg',
+        image: 'images/hotels/9817258_55_b.jpg',
         amenities: [
-            'coffe-maker',
-            'beach',
-            'garden',
-            'safety-box',
-            'deep-soaking-bathtub'
+            13,
+            4,
+            10,
+            1,
+            3
         ]
     },
     {
@@ -1109,13 +1109,13 @@ const hotels = [{
         name: 'Hotel San Agustin Riviera',
         stars: 3,
         price: 798.89,
-        image: '1354077_84_b.jpg',
+        image: 'images/hotels/1354077_84_b.jpg',
         amenities: [
-            'garden',
-            'nightclub',
-            'bathrobes',
-            'bathtub',
-            'separate-bredroom'
+            10,
+            2,
+            11,
+            6,
+            15
         ]
     },
     {
@@ -1123,13 +1123,13 @@ const hotels = [{
         name: 'Palmetto San Miguel',
         stars: 3,
         price: 1057.15,
-        image: '12627687_102_b.jpg',
+        image: 'images/hotels/12627687_102_b.jpg',
         amenities: [
-            'newspaper',
-            'restaurant',
-            'garden',
-            'business-center',
-            'safety-box'
+            7,
+            8,
+            10,
+            5,
+            1
         ]
     },
     {
@@ -1137,13 +1137,13 @@ const hotels = [{
         name: 'BTH',
         stars: 4,
         price: 1822.71,
-        image: '897079_215_b.jpg',
+        image: 'images/hotels/897079_215_b.jpg',
         amenities: [
-            'restaurant',
-            'bathtub',
-            'children-club',
-            'bathrobes',
-            'safety-box'
+            8,
+            6,
+            14,
+            11,
+            1
         ]
     },
     {
@@ -1151,13 +1151,13 @@ const hotels = [{
         name: 'Thunderbird Hotels Carrera',
         stars: 3,
         price: 1559.54,
-        image: '1773941_61_b.jpg',
+        image: 'images/hotels/1773941_61_b.jpg',
         amenities: [
-            'kitchen-facilities',
-            'nightclub',
-            'beach',
-            'beach-pool-facilities',
-            'children-club'
+            16,
+            2,
+            4,
+            12,
+            14
         ]
     },
     {
@@ -1165,13 +1165,13 @@ const hotels = [{
         name: 'qp Hotels Lima',
         stars: 3,
         price: 1318.17,
-        image: '1876458_102_b.jpg',
+        image: 'images/hotels/1876458_102_b.jpg',
         amenities: [
-            'separate-bredroom',
-            'newspaper',
-            'beach',
-            'fitness-center',
-            'beach-pool-facilities'
+            15,
+            7,
+            4,
+            9,
+            12
         ]
     },
     {
@@ -1179,13 +1179,13 @@ const hotels = [{
         name: 'Sol de Oro Hotel & Suites',
         stars: 4,
         price: 1722.41,
-        image: '63569_150_b.jpg',
+        image: 'images/hotels/63569_150_b.jpg',
         amenities: [
-            'fitness-center',
-            'garden',
-            'beach',
-            'restaurant',
-            'separate-bredroom'
+            9,
+            10,
+            4,
+            8,
+            15
         ]
     },
     {
@@ -1193,13 +1193,13 @@ const hotels = [{
         name: 'Hotel Park Suites',
         stars: 2,
         price: 1447.88,
-        image: '00650d24_b.jpg',
+        image: 'images/hotels/00650d24_b.jpg',
         amenities: [
-            'children-club',
-            'beach-pool-facilities',
-            'restaurant',
-            'garden',
-            'coffe-maker'
+            14,
+            12,
+            8,
+            10,
+            13
         ]
     },
     {
@@ -1207,13 +1207,13 @@ const hotels = [{
         name: 'Inkawasi Hostel Boutique',
         stars: 2,
         price: 796.13,
-        image: '4241228_30_b.jpg',
+        image: 'images/hotels/4241228_30_b.jpg',
         amenities: [
-            'restaurant',
-            'fitness-center',
-            'kitchen-facilities',
-            'beach',
-            'business-center'
+            8,
+            9,
+            16,
+            4,
+            5
         ]
     },
     {
@@ -1221,13 +1221,13 @@ const hotels = [{
         name: 'Roosevelt Hotel & Suites',
         stars: 3,
         price: 1710.01,
-        image: '81959_63_b.jpg',
+        image: 'images/hotels/81959_63_b.jpg',
         amenities: [
-            'separate-bredroom',
-            'nightclub',
-            'coffe-maker',
-            'beach-pool-facilities',
-            'garden'
+            15,
+            2,
+            13,
+            12,
+            10
         ]
     },
     {
@@ -1235,13 +1235,13 @@ const hotels = [{
         name: 'The Westin Lima Hotel & Convention Center',
         stars: 5,
         price: 3268.52,
-        image: '4359018_144_b.jpg',
+        image: 'images/hotels/4359018_144_b.jpg',
         amenities: [
-            'safety-box',
-            'kitchen-facilities',
-            'bathrobes',
-            'fitness-center',
-            'coffe-maker'
+            1,
+            16,
+            11,
+            9,
+            13
         ]
     },
     {
@@ -1249,13 +1249,13 @@ const hotels = [{
         name: 'Delfines Hotel & Convention Center',
         stars: 4,
         price: 3841.81,
-        image: '4d72efed_b.jpg',
+        image: 'images/hotels/4d72efed_b.jpg',
         amenities: [
-            'separate-bredroom',
-            'business-center',
-            'safety-box',
-            'children-club',
-            'bathrobes'
+            15,
+            5,
+            1,
+            14,
+            11
         ]
     },
     {
@@ -1263,13 +1263,13 @@ const hotels = [{
         name: 'Belmond Miraflores Park',
         stars: 5,
         price: 9355.52,
-        image: '530284_167_b.jpg',
+        image: 'images/hotels/530284_167_b.jpg',
         amenities: [
-            'coffe-maker',
-            'separate-bredroom',
-            'garden',
-            'children-club',
-            'deep-soaking-bathtub'
+            13,
+            15,
+            10,
+            14,
+            3
         ]
     },
     {
@@ -1277,13 +1277,13 @@ const hotels = [{
         name: 'Atelier Hotel',
         stars: 3,
         price: 1512.97,
-        image: '5405282_15_b.jpg',
+        image: 'images/hotels/5405282_15_b.jpg',
         amenities: [
-            'newspaper',
-            'business-center',
-            'children-club',
-            'beach',
-            'coffe-maker'
+            7,
+            5,
+            14,
+            4,
+            13
         ]
     },
     {
@@ -1291,13 +1291,13 @@ const hotels = [{
         name: 'Jose Antonio Lima',
         stars: 4,
         price: 1914.87,
-        image: '164283a_hb_a_001.jpg',
+        image: 'images/hotels/164283a_hb_a_001.jpg',
         amenities: [
-            'garden',
-            'business-center',
-            'bathrobes',
-            'safety-box',
-            'beach-pool-facilities'
+            10,
+            5,
+            11,
+            1,
+            12
         ]
     },
     {
@@ -1305,13 +1305,13 @@ const hotels = [{
         name: 'El Condado Miraflores Hotel & Suites',
         stars: 3,
         price: 1374.56,
-        image: '9291429_9_b.jpg',
+        image: 'images/hotels/9291429_9_b.jpg',
         amenities: [
-            'coffe-maker',
-            'restaurant',
-            'bathtub',
-            'beach-pool-facilities',
-            'separate-bredroom'
+            13,
+            8,
+            6,
+            12,
+            15
         ]
     },
     {
@@ -1319,13 +1319,13 @@ const hotels = [{
         name: 'Suites del Bosque Hotel',
         stars: 3,
         price: 1647.73,
-        image: '1574025_73_b.jpg',
+        image: 'images/hotels/1574025_73_b.jpg',
         amenities: [
-            'beach-pool-facilities',
-            'newspaper',
-            'separate-bredroom',
-            'safety-box',
-            'garden'
+            12,
+            7,
+            15,
+            1,
+            10
         ]
     },
     {
@@ -1333,13 +1333,13 @@ const hotels = [{
         name: 'Leon de Oro Inn & Suites',
         stars: 3,
         price: 1128,
-        image: '6975518_43_b.jpg',
+        image: 'images/hotels/6975518_43_b.jpg',
         amenities: [
-            'nightclub',
-            'business-center',
-            'safety-box',
-            'deep-soaking-bathtub',
-            'garden'
+            2,
+            5,
+            1,
+            3,
+            10
         ]
     },
     {
@@ -1347,13 +1347,13 @@ const hotels = [{
         name: 'Sonesta Posadas del Inca Miraflores - Lima',
         stars: 3,
         price: 1485.63,
-        image: '44e00399_b.jpg',
+        image: 'images/hotels/44e00399_b.jpg',
         amenities: [
-            'garden',
-            'restaurant',
-            'beach',
-            'deep-soaking-bathtub',
-            'bathtub'
+            10,
+            8,
+            4,
+            3,
+            6
         ]
     },
     {
@@ -1361,13 +1361,13 @@ const hotels = [{
         name: 'B&B Tradiciones',
         stars: 3,
         price: 801.45,
-        image: '893882_7_b.jpg',
+        image: 'images/hotels/893882_7_b.jpg',
         amenities: [
-            'newspaper',
-            'coffe-maker',
-            'safety-box',
-            'beach-pool-facilities',
-            'nightclub'
+            7,
+            13,
+            1,
+            12,
+            2
         ]
     },
     {
@@ -1375,13 +1375,13 @@ const hotels = [{
         name: 'Maria Angola Hotel & Centro de Convenciones',
         stars: 3,
         price: 1131.76,
-        image: '23645_15_b.jpg',
+        image: 'images/hotels/23645_15_b.jpg',
         amenities: [
-            'garden',
-            'restaurant',
-            'children-club',
-            'separate-bredroom',
-            'deep-soaking-bathtub'
+            10,
+            8,
+            14,
+            15,
+            3
         ]
     },
     {
@@ -1389,15 +1389,15 @@ const hotels = [{
         name: 'Hotel Continental',
         stars: 3,
         price: 774.53,
-        image: '802720_60_b.jpg',
+        image: 'images/hotels/802720_60_b.jpg',
         amenities: [
-            'deep-soaking-bathtub',
-            'coffe-maker',
-            'newspaper',
-            'beach',
-            'children-club'
+            3,
+            13,
+            7,
+            4,
+            14
         ]
     }
 ]
 
-module.exports = hotels; 
+module.exports = hotels;

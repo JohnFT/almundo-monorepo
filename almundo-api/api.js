@@ -28,7 +28,7 @@ api.use('*', async (req, res, next) => {
         }
 
     }
-    hotels = services;
+    hotels = services.Hotels;
     next();
 });
 

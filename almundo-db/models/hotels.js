@@ -3,17 +3,17 @@
 const Sequelize = require('sequelize'); // Module ORM
 const setupDatabase = require('../lib/db'); // Module connection db
 
-module.exports = function hoteModel(config){
+module.exports = function hoteModel(config) {
     // Instance connection db
     const sequelize = setupDatabase(config);
 
     // Define Table Model -- Create table hotels on db
-    return sequelize.define('hotel',{
+    return sequelize.define('hotel', {
         uuid: {
-            type: Sequelize.STRING,
-            allowNull: false
+            type: Sequelize.UUID,
+            defaultValue: Sequelize.UUIDV1
         },
-        name:{
+        name: {
             type: Sequelize.STRING,
             allowNull: false
         },
@@ -22,13 +22,12 @@ module.exports = function hoteModel(config){
             allowNull: false
         },
         price: {
-            type: Sequelize.INTEGER,
-            allowNull:false
+            type: Sequelize.FLOAT,
+            allowNull: false
         },
-        image:{
+        image: {
             type: Sequelize.STRING,
             allowNull: false
         }
-    }) 
+    })
 }
-
