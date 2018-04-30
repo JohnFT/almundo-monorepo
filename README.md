@@ -1,6 +1,6 @@
 # Almundo-Hotels
 ## Descripción
-paliación Almundo - Hotels esta compuesto por 3 proyectos y uno de tipo Angular 5, construido con el patrón mono repo, en el cual en un repositorio se encuentran varios Tipos de proyectos que conforman una aplicación, cada uno de estos cumple un rol y se encarga de manejar diferentes procesos.
+Almundo - Hotels esta compuesto por 3 proyectos y uno de tipo Angular 5, construido con el patrón mono repo, en el cual en un repositorio se encuentran varios Tipos de proyectos que conforman una aplicación, cada uno de estos cumple un rol y se encarga de manejar diferentes procesos.
 
 ### almundo-db 
 Es un proyecto en la capa persistencia, trabaja con un ORM (squalize) soportando motores de base de datos como postgresql,
