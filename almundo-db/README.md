@@ -4,7 +4,7 @@ Es aplicación Nodejs utiliza (Sequalize)[http://docs.sequelizejs.com/] como ORM
  > npm install
 ```
 
-Si su base de datos no es postgres cree la variable de sistema conl el nobre del motor
+Si su base de datos no es postgres cree la variable de sistema conl el nombre del motor
 
 ```
 process.env.DB_MANAGE || 'postgres'
