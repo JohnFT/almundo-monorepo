@@ -1,6 +1,22 @@
 # Almundo-API
 Este proyecto es una API REST utilaza [Express framework](http://expressjs.com/es/)
+Previamente se debe instalar la aplicación almundo-db la cual se encuentra como dependencia de archivo en el archivo package.jons;
+para cambiar la ruta del proyecto remplazar la ubicación
+```
+// Package.json
 
+"dependencies": {
+    "almundo-db": "file:../almundo-db", // remplazar ubicación
+    "body-parser": "^1.18.2",
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "express-asyncify": "^1.0.0",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.2.1",
+    "nodemon": "^1.17.3"
+  }
+```
 ```
  > npm install
 ```
