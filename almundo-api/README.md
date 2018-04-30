@@ -67,9 +67,13 @@ DELETE /api/hotels // Elimina un hotel
 
 ## Middelware
 Access-Control-Allow-Origin: permite acceso desde cualquier origen para el consumo de los servicios rest
+
 Body-Parse: decodifica los objetos json que vienen en la url de request
+
 DBConnection: este middelware crea un Singleton de la conexión a la base de datos retornando una instancia del modulo almundo-db
+
 Auth.: verifica el envío del jwt en la cabecera http del request y que este sea valido
+
 asyncify: crea endponit asíncronos en Express
 
   
