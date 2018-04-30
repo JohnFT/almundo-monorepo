@@ -9,7 +9,7 @@ module.exports = {
         host: process.env.DB_HOST || 'localhost',
         logging: s => debug(s),
         operatorsAliases: false,
-        memory: false
+        memory: true
     },
     auth:{
         secret: process.env.API_SECRET || 'almundo-secret'
