@@ -13,3 +13,6 @@ Rutas de acceso a /static
 GET images /static/images/${image}.${extension}
 GET icons /static/icons/${image}.${extension}
 ```
+## Autor
+
+* **John Alexander Fonseca Tumay**
