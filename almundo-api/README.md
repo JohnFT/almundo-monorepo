@@ -21,6 +21,25 @@ para cambiar la ruta del proyecto remplazar la ubicación
  > npm install
 ```
 
+Si no cuenta con una base de datos cambie la configuración para que trabaje con un objeto en memoria entra en el archivo config.js y cambie le valor memory a true
+
+```
+    db: {
+
+        database: process.env.DB_NAME || 'almundo',
+        username: process.env.DB_USER || 'almundo',
+        password: process.env.DB_PASS || 'almundo2018*',
+        host: process.env.DB_HOST || 'localhost',
+        logging: s => debug(s),
+        operatorsAliases: false,
+        memory: false // cambiar a true
+    },
+    auth:{
+        secret: process.env.API_SECRET || 'almundo-secret'
+    }
+```
+De lo contrario si no pose una motor de base de datos postgres configure el proyecto almundo-db
+
 ## Modo Desarrollo
 
 Ejecuta el comando `npm start-dev` para levantar el servidor en modo debug, se implementa nodemon para reiniciar el servidor al producirse algún cambio en los archivos. Si se configura como variable del sistema PORT la aplicación escuchara el servidor en le puerto asignado a esta variable de lo contrario correera en el puerto 3000 `http://localhost:${Port}/`.
