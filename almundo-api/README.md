@@ -21,7 +21,7 @@ para cambiar la ruta del proyecto remplazar la ubicación
  > npm install
 ```
 
-Si no cuenta con una base de datos cambie la configuración para que trabaje con un objeto en memoria entra en el archivo config.js y cambie le valor memory a true
+Si cuenta con una base de datos cambie la configuración para que trabaje con  el motor de base de datos que usa cámbiela en el archivo config.js  el valor memory a true configure el proyecto almundo-db para seleccionar el motor de base de datos que usa, De lo contrario la aplicación usara un objeto en memoria con la referencia de la entidad
 
 ```
     db: {
@@ -32,13 +32,13 @@ Si no cuenta con una base de datos cambie la configuración para que trabaje con
         host: process.env.DB_HOST || 'localhost',
         logging: s => debug(s),
         operatorsAliases: false,
-        memory: false // cambiar a true
+        memory: true // cambiar a false
     },
     auth:{
         secret: process.env.API_SECRET || 'almundo-secret'
     }
 ```
-De lo contrario si no pose una motor de base de datos postgres configure el proyecto almundo-db
+
 
 ## Modo Desarrollo
 
