@@ -4,6 +4,12 @@ Es aplicación Nodejs utiliza (Sequalize)[http://docs.sequelizejs.com/] como ORM
  > npm install
 ```
 
+Si su base de datos no es postgres cree la variable de sistema conl el nobre del motor
+
+```
+process.env.DB_MANAGE || 'postgres'
+```
+
 ## inicio
 
 Ejecuta el comando `npm setup` crea la base de datos desde 0 partiendo de la configuracion en el archivo stup.js, crea registros que se encuentra en la carpeta mocks
