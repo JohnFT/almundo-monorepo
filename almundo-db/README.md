@@ -1,6 +1,38 @@
 # Almundo-DB
 Es aplicación Nodejs utiliza (Sequalize)[http://docs.sequelizejs.com/] como ORM para crea una acceso a datos multimotor es usado en proyectos como la capa de acceso a datos 
-## Estructura
+
+## inicio
+
+Ejecuta el comando `npm setup` crea la base de datos desde 0 partiendo de la configuracion en el archivo stup.js, crea registros que se encuentra en la carpeta mocks
+
+## usage
+
+```
+const db = require('almundo-db');
+
+const conf = {
+
+        database: process.env.DB_NAME || 'almundo',
+        username: process.env.DB_USER || 'almundo',
+        password: process.env.DB_PASS || 'almundo2018*',
+        host: process.env.DB_HOST || 'localhost',
+        logging: s => debug(s),
+        operatorsAliases: false,
+        memory: false
+}
+
+try {
+    services = await db(conf);
+    hotels = services.Hotels;
+} catch (err) {
+    console.log(err);
+}
+    
+```
+
+
+
+# Estructura
 
 ```
 --lib
@@ -226,7 +258,7 @@ Example es un modulo de prueba el cual crea la base de datos a través de squali
 
 
 # Endponit Index.js
-Este modulos crear la conexion a la base de datos, puede restaurar la y prepara los modelos para se utilizados retorna los setup los objetos que interactuan con las entidades de la base de datos
+Este módulos crear la conexión a la base de datos el conoce el motor al cuál se conectara, puede restaurar la y prepara los modelos para se utilizados retorna los setup los objetos que interactúan con las entidades de la base de datos
 
 ### usage
 const db = require('../index');
