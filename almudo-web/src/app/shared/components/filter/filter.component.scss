@@ -1,0 +1,51 @@
+.Component {
+    &-Filter {
+        min-width: 220px;
+        &-Header {
+            background: #ffffff;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            span.d-none {
+                color: black;
+                list-style: none;
+            }
+        }
+        &-Body {
+            input {
+                font-size: 12px;
+                border-radius: 0;
+                height: 30px;
+                margin: 5px;
+                padding: 5px;
+            }
+            ul.stars {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    padding: 2px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    p {
+                        margin: 0;
+                    }
+                    input {
+                        height: 14px;
+                    }
+                    i.star {
+                        padding: 5px 3px;
+                        color: #debc15;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .Component-Filter-Header {
+        color: #157ab0;
+        text-align: center;
+    }
+}

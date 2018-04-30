@@ -1,0 +1,27 @@
+<div class="Component-Product">
+  <div class="card Product d-md-flex flex-md-row">
+    <img class="Product-image" [src]="urlStatics + image" alt="Hotel">
+    <div class="card-body Product-body w-100">
+      <h5 class="card-title Product-body-title">{{name}}</h5>
+      <ul class="Product-body-stars d-flex">
+        <li *ngFor="let item of lsStars">
+          <i class="fa fa-star"></i>
+        </li>
+      </ul>
+      <ul class="Product-body-items d-flex flex-wrap">
+        <li *ngFor="let amenitie of amenities">
+          <img [src]="urlStatics + amenitie.icon" [alt]="amenitie.name">
+        </li>
+      </ul>
+    </div>
+    <div class="card-body Product-price w-100 text-center">
+      <p>
+        Precio por noche por habitación
+      </p>
+      <h5>
+        <span>ARS</span> {{price}}
+      </h5>
+      <button class="btn btn-succes">Ver hotel</button>
+    </div>
+  </div>
+</div>

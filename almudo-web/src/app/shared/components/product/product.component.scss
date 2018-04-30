@@ -1,0 +1,96 @@
+.Component-Product {
+    padding-bottom: 10px;
+    .Product {
+        padding: 5px;
+        border-radius: 0;
+        &-image {
+            width: 170px;
+            height: 150px;
+        }
+        &-body {
+            padding: 5px;
+            &-title {
+                font-size: 14px;
+                font-weight: 700;
+                margin: 0;
+                color: #157ab0;
+            }
+            &-stars {
+                margin: 0;
+                padding: 10px 0 0 0;
+                li {
+                    list-style: none;
+                    color: #debc15;
+                    font-size: 12px;
+                    padding: 2px;
+                }
+            }
+            &-items {
+                margin: 0;
+                padding: 0 0 10px 0;
+                li {
+                    list-style: none;
+                    padding-right: 5px;
+                    img {
+                        height: 15px;
+                        width: 15px;
+                    }
+                }
+            }
+        }
+        &-price {
+            border-left: 1px dashed #b9b9b9;
+            max-width: 180px;
+            h5 {
+                margin: 0;
+                color: #bd5f12;
+                font-weight: 800;
+                padding: 10px 0;
+                font-size: 25px;
+                span {
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+            }
+            p {
+                font-size: 10px;
+                font-weight: 100;
+                margin: 0;
+                color: #525252;
+            }
+            button {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .Component-Product {
+        max-width: 200px;
+        .Product {
+            &-image {
+                width: 100%;
+                height: 150px;
+            }
+            &-price {
+                border: 0;
+                max-width: 100%;
+                border-top: 1px dashed #b9b9b9;
+            }
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    .Component-Product {
+        max-width: 100% !important;
+        .Product {
+            &-image {
+                width: 100%;
+                height: auto !important;
+            }
+        }
+    }
+}

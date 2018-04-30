@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.Component {
+    &-main {
+        background-color: #f2f2f2;
+        height: 100%;
+        overflow: hidden;
+        padding-bottom: 40px;
+    }
+    &-Filter {
+        .accordion .card{
+            background-color: transparent;
+        }
+        &-Body {
+            .accordion .card {
+                margin: 3px 0px;
+                border-radius: 0;
+                border: none;
+                background-color: transparent;
+                .card-header {
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: #157ab0;
+                    background-color: white;
+                    border: none;
+                    padding: 10px;
+                    &.active {
+                        i.fa-caret-up:before {
+                            content: "\f0d7";
+                        }
+                    }
+                    a {
+                        list-style: none;
+                        span {
+                            color: black;
+                            i{
+                                color: #157ab0;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                a {
+                    color: #157ab0;
+                    text-decoration: none;
+                    span {
+                        color: black;
+                    }
+                }
+            }
+            .card-body {
+                &.collapse {
+                    height: 0px;
+                    opacity: 0;
+                    &.show {
+                        opacity: 1;
+                        height: auto;
+                        transition-delay: 1s;
+                        transition-duration: 2s;
+                        background-color: white
+                    }
+                }
+                padding: 5px 12px 5px 5px;
+                .form-check {
+                    padding: 0;
+                }
+                .btn.btn-succes {
+                    font-size: 12px;
+                    padding: 5px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+.btn.btn-succes {
+    background-color: #002d75;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 0;
+    height: 38px;
+}
+
+#ngb-panel-0-header,
+#ngb-panel-0 {
+    padding: 0;
+    border: none;
+}

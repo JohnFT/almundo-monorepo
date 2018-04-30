@@ -1,0 +1,80 @@
+<div class="Component-Filter">
+  <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+    <ngb-panel>
+      <ng-template id="title-filter" ngbPanelTitle>
+        <div class="Component-Filter-Header">
+          <span class="d-none d-sm-block">Filtros</span>
+          <a class="d-sm-none">Filtrar
+            <i class="fa fa-caret-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </ng-template>
+      <ng-template id="body-filter" ngbPanelContent>
+        <div class="Component-Filter-Body">
+          <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-2, ngb-panel-1">
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <div class="d-flex justify-content-between">
+                  <a>
+                    <i class="fa fa-search" aria-hidden="true"></i> Nombre de hotel
+                  </a>
+                  <span>
+                    <i class="fa fa-caret-up" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <div>
+                  <form class="d-flex">
+                    <input type="text" class="form-control" [(ngModel)]="queryString" name="querystring" placeholder="Ingrese el nombre del hotel">
+                    <button class="btn btn-succes m-1" (click)="handleSuccess()">Aceptar</button>
+                  </form>
+                </div>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <div class="d-flex justify-content-between">
+                  <a>
+                    <i class="fa fa-star" aria-hidden="true"></i> Estrellas
+                  </a>
+                  <span>
+                    <i class="fa fa-caret-up" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <div>
+                  <ul class="stars">
+                    <li>
+                      <div class="form-check">
+                        <div class="custom-control custom-checkbox" (click)="handleChecked(all)">
+                          <input type="radio" [id]="all.number" name="stars" class="custom-control-input">
+                          <label class="custom-control-label" [for]="all.number">
+                            <p> Todas las estrellas</p>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li *ngFor="let item of stars">
+                      <div class="form-check">
+                        <div class="custom-control custom-checkbox" (click)="handleChecked(item)">
+                          <input type="radio" [id]="item.number" name="stars" class="custom-control-input">
+                          <label class="custom-control-label" [for]="item.number">
+                            <ng-container *ngFor="let item of  getStar(item.number)">
+                              <i class="fa fa-star star" aria-hidden="true"></i>
+                            </ng-container>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+        </div>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+</div>

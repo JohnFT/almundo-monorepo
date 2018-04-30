@@ -1,0 +1,4 @@
+{
+  "urlServices": "http://localhost:3000/api/",
+  "urlStatics": "http://localhost:3001/static/"
+}

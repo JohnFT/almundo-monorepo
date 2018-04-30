@@ -1,0 +1,14 @@
+.Component{
+    &-main{
+        &-Header {
+            padding: 10px;
+            background-color: #134280;
+            figure {
+                margin: 0;
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

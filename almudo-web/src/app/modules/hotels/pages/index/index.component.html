@@ -1,0 +1,19 @@
+<div class="Component-Hotels d-flex flex-column   h-100">
+  <div class="Component-Hotels-Body  d-flex flex-column flex-sm-row h-100">
+    <section class="Component-Filter  h-100">
+      <div class="filter">
+        <app-filter (succes)="handleSucces($event)" (star)="handleStar($event)"></app-filter>
+      </div>
+    </section>
+    <section class="Component-Content w-100  h-100 d-flex flex-row flex-wrap flex-md-column flex-md-nowrap justify-content-around justify-content-md-start">
+      <ng-container *ngFor="let hotel of hotels | search:'name':query | search: 'stars': stars">
+        <app-product [price]="hotel.price" 
+          [name]="hotel.name" 
+          [image]="hotel.image"
+          [amenities]="hotel.amenities"
+          [stars]="hotel.stars"
+        ></app-product>
+      </ng-container>
+    </section>
+  </div>
+</div>

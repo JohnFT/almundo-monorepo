@@ -1,0 +1,28 @@
+.Component {
+    &-Hotels {
+        &-Body {
+            padding: 5px;
+            section {
+                padding: 5px;
+            }
+            .Component-Content {
+                overflow: auto;
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .Component {
+        &-Hotels {
+            padding: 0;
+            &-Body {
+                padding: 0 !important;
+            }
+        }
+        &-Filter {
+            padding: 0 !important;
+            height: auto !important;
+        }
+    }
+}
