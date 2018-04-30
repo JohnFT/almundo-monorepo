@@ -36,3 +36,6 @@ Es un proyecto en Angular 5 encargado del front-end de la aplicación la cual li
     $ cd PROJECT
     $ npm install
 
+## Autor
+
+* **John Alexander Fonseca Tumay**
