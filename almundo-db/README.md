@@ -285,4 +285,7 @@ entities.HotelsAnimities.findAll();
 > node ../examples/index.js
 ```
 
+## Autor
+
+* **John Alexander Fonseca Tumay**
 
