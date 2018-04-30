@@ -1,6 +1,10 @@
 # Almundo-API
 Este proyecto es una API REST utilaza [Express framework](http://expressjs.com/es/)
 
+```
+ > npm install
+```
+
 ## Modo Desarrollo
 
 Ejecuta el comando `npm start-dev` para levantar el servidor en modo debug, se implementa nodemon para reiniciar el servidor al producirse algún cambio en los archivos. Si se configura como variable del sistema PORT la aplicación escuchara el servidor en le puerto asignado a esta variable de lo contrario correera en el puerto 3000 `http://localhost:${Port}/`.
