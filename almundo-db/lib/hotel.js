@@ -14,15 +14,18 @@ module.exports = function setupHotel(HotelModel, amenitieModel) {
 
     async function findAll() {
         try {
-
-            let res = await HotelModel.findAll();
-            res = await Promise.all(res.map(async h => {
-                h.amenities = await setupHotel().query(`SELECT a.* FROM  hotelamenities, amenities a WHERE a.id = "amenitieId" AND "hotelId" = ${h.id}`, {
-                    model: amenitieModel
-                })
-                return h;
-            }))
-            return res;
+            if(HotelModel){
+                let res = await HotelModel.findAll();
+                res = await Promise.all(res.map(async h => {
+                    h.amenities = await setupHotel().query(`SELECT a.* FROM  hotelamenities, amenities a WHERE a.id = "amenitieId" AND "hotelId" = ${h.id}`, {
+                        model: amenitieModel
+                    })
+                    return h;
+                }))
+                return res;
+            }
+            return hotels;
+          
         } catch (err) {
             return [];
         }
@@ -48,10 +51,9 @@ module.exports = function setupHotel(HotelModel, amenitieModel) {
     }
 
     async function findByName(name) {
-        setupHotel();
         const res = HotelModel ? await setupHotel().query(`SELECT * FROM  hotels WHERE name like '%${name}%'`, {
             model: HotelModel
-        }) : hotels.find(h => h.name === name);
+        }) : hotels.filter(h => h.name.indexOf(name) > -1);
 
         return res;
     }
@@ -59,14 +61,14 @@ module.exports = function setupHotel(HotelModel, amenitieModel) {
     async function findByStars(stars) {
         const res = HotelModel ? await setupHotel().query(`SELECT * FROM  hotels WHERE stars = ${stars}`, {
             model: HotelModel
-        }) : hotels.find(h => h.stars === stars);
-        return res;
+        }) : hotels.filter(h => h.stars == stars);
+        return res || [];
     }
 
     async function findByNameAndStars(name, stars) {
         const res = HotelModel ? await setupHotel().query(`SELECT * FROM  hotels WHERE name like '%${name}%' AND stars = ${stars}`, {
             model: HotelModel
-        }) : hotels.find(h => h.stars === stars && h.name === name);
+        }) : hotels.filter(h => h.stars == stars && h.name.indexOf(name) > -1);
         return res;
     }
 
